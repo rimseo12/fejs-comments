@@ -29,13 +29,13 @@ export default function Comments({ $app, user, initialState, onSubmit, onRemove 
         onSubmit($input.value);
         $input.value = '';
       } else {
-        document.querySelector('.card').className = 'card show';
+        document.querySelector('.social-card').className = 'social-card show';
       }
     }
 
     if (e.target.className === 'social') {
       localStorage.setItem(LOGIN_STORAGE_KEY, JSON.stringify('seorim'));
-      document.querySelector('.card.show').className = 'card';
+      document.querySelector('.social-card.show').className = 'social-card';
       alert ('Welcome, you are now logged in');
     }
     if (e.target.className.indexOf('btn--icon-like') === 0) {
