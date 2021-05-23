@@ -1,0 +1,19 @@
+{
+  "name": "comment",
+  "version": "1.0.0",
+  "description": "모바일 댓글 화면 구현",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seorim",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "prettier": "2.3.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,145 @@
+.header {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #808080;
+  width: 100%;
+}
+img {
+  display: none;
+}
+h2 {
+  align-items: center;
+}
+.contents {
+  color: #fff;
+  position: relative;
+  height: 500px;
+  margin-bottom: 32px;
+  background-size: cover;
+  background-color: #424242;
+  background-image: url(https://source.unsplash.com/random);
+  background-position: center;
+}
+.social-card {
+  display: none;
+}
+.social-card.show {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  padding-top: 325px;
+  text-align: center;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.social {
+  width: 350px;
+  height: 49px;
+  border-radius: 50px;
+  padding-left: 16px;
+  text-align: left;
+  font-size: large;
+}
+.logo {
+  margin-right: 70px;
+  font-size: 22px;
+}
+.custom-naver img {
+  width: 22px;
+}
+.custom-facebook {
+  color: #4267B2; 
+}
+.custom-google {
+  color: #4285F4;
+}
+.custom-twitter {
+  color: #1DA1F2;
+}
+.comments {
+  margin-bottom: 150px;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: 5px;
+}
+.comment-box {
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  margin-left: 5px;
+  background: #fff;
+}
+.comment-box-style {
+  display: flex;
+}
+#comment-input {
+  width: 210px;
+  height: 23px;
+  padding-top: 0px;
+}
+#addCommentButton {
+  color: white;
+  font-weight: 500;
+  background-color: skyblue;
+  border: none;
+  border-radius: 4px;
+  width: 60px;
+  height: 28px;
+  margin-left: 5px;
+}
+#editCommentButton {
+  display: none;
+  color: white;
+  font-weight: 500;
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  width: 60px;
+  height: 28px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#cancelCommentButton {
+  display: none;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(126, 129, 125);
+  border: none;
+  border-radius: 4px;
+  width: 60px;
+  height: 28px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.notice {
+  color: #ff0000;
+  display: flex;
+  margin-top: 4px;
+}
+.btn--icon-like,
+.btn--icon-dislike {
+  opacity: 1;
+  color: rgb(116, 112, 112);
+}
+.liked .btn--icon-like {
+  opacity: 1;
+  color: #1DA1F2;
+}
+.disliked .btn--icon-dislike {
+  opacity: 1;
+  color: #ee1b1b;
+}

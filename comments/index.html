@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Mission</title>
+</head>
+
+<body>
+  <!--Start .header-->
+  <span class="header">
+    <h2>Blog</h2>
+  </span>
+  <!--End .header-->
+  <!--Start .contents-->
+  <div class="contents">
+    <img src="https://source.unsplash.com/random" />
+    <div>
+      <h1>Title of a longer featured blog post</h1>
+      <p>
+        Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most
+        interesting in this post's contents.
+      </p>
+    </div>
+  </div>
+  <!--End .contents-->
+  <!--Start .app-->
+  <div class="app">
+    <!--Start .comment-box-->
+    <div class="comment-box">
+      <h3>나도 한마디!</h3>
+      <span class="comment-box-style">
+        <input id="comment-input" placeholder="댓글을 입력해주세요." />
+        <button type="button" id="addCommentButton">등록</button>
+        <button type="button" id="editCommentButton">수정</button>
+        <button type="button" id="cancelCommentButton">취소</button>
+      </span>
+      <span class="notice"></span>
+    </div>
+    <!--End .comment-box-->
+    <!--Start .social-card-->
+    <div class="social-card">
+      <button class="social">
+        <span class="logo custom-naver"><img src="./images/naver.png" /></span>
+        네이버로 로그인
+      </button>
+      <button class="social">
+        <span class="logo custom-kakao"><img src="./images/kakao-talk.png" /></span>
+        카카오톡으로 로그인
+      </button>
+      <button class="social">
+        <span class="logo custom-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </span>
+        페이스북으로 로그인
+      </button>
+      <button class="social">
+        <span class="logo custom-google">
+          <i class="fab fa-google"></i>
+        </span>
+        구글로 로그인
+      </button>
+      <button class="social">
+        <span class="logo custom-twitter">
+          <i class="fab fa-twitter"></i>
+        </span>
+        트위터로 로그인
+      </button>
+    </div>
+    <!--End .social-card-->
+  </div>
+  <!--End .app-->
+  <script src="./index.js" type="module"></script>
+</body>
+
+</html>
